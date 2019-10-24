@@ -1,0 +1,21 @@
+
+<div class="jumbotron">
+    <h1>BrainWare Orders</h1>
+    <p class="lead">This is the BrainWare orders page! Welcome</p>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Your Orders</h2>
+        <div id="orders">
+            <ul>
+                <li *ngFor="let order of orders">
+                    {{order.description}} (Total: ${{order.price}})
+                    <ul>
+                        <li *ngFor="let item of order.items">{{item.product.name}} ({{item.quantity}} @ ${{item.price}}/ea)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+    </div>
+  
+</div>
