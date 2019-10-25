@@ -1,0 +1,113 @@
+<div class="jumbotron">
+    <h1>BrainWare Orders</h1>
+    <p class="lead">This is the BrainWare orders page! Welcome</p>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Changes</h2>
+        <ul>
+            <li>High Priority Changes:
+                <ul>
+                    <li><a href="https://brainshark.sarslan.net" traget="_blank">Front-End</a> & <a
+                            href="https://brainshark-api.sarslan.net/swagger" traget="_blank">Back-End</a> are
+                        seperated.
+                        <ul>
+                            <li>Seperating layers makes development and deployment simple.</li>
+                            <li>Mostly back-end is shared by multible Front-End applications</li>
+                            <li>It descreases load on server.</li>
+                        </ul>
+                    </li>
+
+                    <li>Config transformantion is added
+                        <ul>
+                            <li>It avoids manual configuration process</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://brainshark-api.sarslan.net/info" traget="_blank">Swagger</a> is added as Api
+                        documentation
+                        <ul>
+                            <li>Swagger is market standard out-of-box api documentation</li>
+                            <li>It helps api-client generation easy.</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="https://brainshark-api.sarslan.net/info" traget="_blank">Info Service</a> is addded to
+                        display version and stage.
+                        <ul>
+                            <li>It helps to verify deployment</li>
+                        </ul>
+                    </li>
+
+
+
+                    <li><a href="https://brainshark-api.sarslan.net/health" traget="_blank">Health Service</a> is addded
+                        to validate connection with third-party services
+                        <ul>
+                            <li>Health Services is a docker requirement. In case of a service failure; it spins up new
+                                instance</li>
+                            <li>It helps diagnosis after deployment</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>Technological Changes:
+                <ul>
+                    <li>Back-End is modified to support docker
+                        <ul>
+                            <li>Docker makes development and deployment easy</li>
+                            <li>Isolated docker environment decreases risk of disaster</li>
+                            <li>Docker is cheaper than Virtual Image hosting</li>
+                        </ul>
+                    </li>
+
+                    <li>Dotnet Framework replaced with .NetCore 3.0
+                        <ul>
+                            <li>.NetCore is much more lighter and .Net Framework</li>
+                            <li>It's cross-platform. So we can take advantages of Linux Images</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>Logical Changes:
+                <ul>
+                    <li>DTO transformation is moved to client-side.
+                        <ul>
+                            <li>Micro-services supposed to be generic and provided all required information. Consumer
+                                transform it on its own side.</li>
+                            <li>DTO transoformation logic is part of client-side. Client transforms it based on its
+                                requirement.</li>
+                        </ul>
+                    </li>
+                    <li>Api url format is chnaged from MVC to REST.
+                        <ul>
+                            <li>Rest is market standard. Applying same standards helps development easy.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>Bonus Changes:
+                <ul>
+                    <li>Front-End is converted into Angular App.
+                        <ul>
+                            <li>Angular templating makes development is easy for big projects</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>Suggested Changes:
+                <ul>
+                    <li>Using GraphQL instead of REST
+                        <ul>
+                            <li>It provides better response custumization and DTO transformantion.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
